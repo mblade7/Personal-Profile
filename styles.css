@@ -1,7 +1,7 @@
 ﻿html {
     padding: 0;
     margin: 0;
-    background-color: #7aeaff
+    background-color:#0469b6
 }
 
 .profile-img {
@@ -10,7 +10,9 @@
 }
 
 .profile-img img{
-    border-radius: 50%
+    border-radius: 50%;
+    max-width:300px;
+    box-shadow: 3px 3px 3px;
 }
 
 .main-navigation {
@@ -27,7 +29,7 @@ ul#navigation {
     font-weight: bold;
     flex-direction: row;
     color: white;
-    font-size: 1.9em;
+    font-size: 1.6em;
 }
 
 ul#navigation li{
@@ -37,6 +39,13 @@ ul#navigation li{
 a {
     text-decoration: none;
 }
+a:-webkit-any-link {
+    color:white;
+}
+a:hover {
+    background-color: #018bd9;
+    color:black;
+}
 .btn, .btn:visited {
     width: 100%;
     max-width: 180px;
@@ -45,7 +54,6 @@ a {
     border: 2px solid #0e0091;
     border-radius: 12px;
     padding: 12px 24px;
-    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -60,4 +68,57 @@ h1{
 }
 h2{
     font-size: 3em;
+    box-shadow: 0px 1px;
+    margin-block-end:.5em
+}
+.aboutme-container {
+    background-color:#ffebcd;
+}
+.education-certification-container {
+    background-color:#f5deb3;
+}
+.education-certification-container h3{
+    padding-bottom:0;
+    margin-bottom:0;
+}
+.education-certification-container h4{
+    padding-top:0;
+    margin-top:0;
+    font-size:.75em;
+}
+.projects-container {
+    background-color:#c3b091
+}
+.skills-container {
+    background-color:#c19a6b
+}
+.aboutme-container,.education-certification-container, .projects-container, .skills-container{
+    box-shadow: 3px 3px 3px;
+}
+@media only screen and (min-width: 768px) {
+    .aboutme-content p {
+        font-size: 1.7em;
+        margin-inline: 15% 15%;
+    }
+
+    .projects-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    .education-certification-container h4{
+        font-size:1em;
+    }
+}
+@media only screen and (max-width: 585px) {
+    .main-navigation{
+        position:fixed;
+        visibility:hidden;
+    }
 }
