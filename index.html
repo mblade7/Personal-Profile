@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <title>Michael Blaydes</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
     <nav class="main-navigation">
         <ul id="navigation">
             <li><a href="#aboutme">About Me</a></li>
@@ -52,52 +54,56 @@
 
         <main class="projects-content">
             <h2>Projects</h2>
-            <article class="projects-item">
+            <div class="item-list">
+                <article class="projects-item" id="project1">
 
-                <h3>Project 1</h3>
+                    <h3>Project 1</h3>
 
-                <p>This is an online Pokedex where you can get details on Pokemon. It was made with ASP.NET</p>
+                    <p>This is an online Pokedex where you can get details on Pokemon. It was made with ASP.NET</p>
 
-                <p><a href="https://github.com/mblade7/Pokedex" class="btn">View on GitHub &raquo;</a></p>
+                    <p><a href="https://github.com/mblade7/Pokedex" class="btn">View on GitHub &raquo;</a></p>
 
-            </article>
+                </article>
 
-            <article class="projects-item">
+                <article class="projects-item" id="project2">
 
-                <h3>Project 2</h3>
+                    <h3>Project 2</h3>
 
-                <p> This is a C# Console Application made to figure out the commission for the sale of a few different products </p>
+                    <p> This is a C# Console Application made to figure out the commission for the sale of a few different products </p>
 
-                <p><a href="https://github.com/mblade7/CompensationTracker" class="btn">View on GitHub &raquo;</a></p>
+                    <p><a href="https://github.com/mblade7/CompensationTracker" class="btn">View on GitHub &raquo;</a></p>
 
-            </article>
+                </article>
 
-            <article class="projects-item">
+                <article class="projects-item" id="project3">
 
-                <h3>Project 3</h3>
+                    <h3>Project 3</h3>
 
-                <p> This is a C# Console Application made to generate the alphabet with choosing to skip letters. </p>
+                    <p> This is a C# Console Application made to generate the alphabet with choosing to skip letters. </p>
 
-                <p><a href="https://github.com/mblade7/CodeLouisvilleDemos" class="btn">View on GitHub &raquo;</a></p>
+                    <p><a href="https://github.com/mblade7/CodeLouisvilleDemos" class="btn">View on GitHub &raquo;</a></p>
 
-            </article>
+                </article>
+            </div>
 
         </main>
     </section>
-        <section class="skills-container" id="skills">
-            <main class="skills-content">
-                <h2>
-                    Skills
-                </h2>
-                <article class="skills-item">
+    <section class="skills-container" id="skills">
+        <main class="skills-content">
+            <h2>
+                Skills
+            </h2>
+            <div class="item-list">
+                <article class="skills-item" id="skill1">
                     <h3>Customer Service</h3>
                     <p>I have multiple years of customer service such as handling complaints, making recommendations, and creating solutions for customers</p>
                 </article>
-                <article class="skills-item">
+                <article class="skills-item" id="skill2">
                     <h3>Teaching & Training</h3>
                     <p>I have spent over a decade in various teaching, training, and mentoring roles on such subjects as English, math, safety, and financial services</p>
                 </article>
-            </main>
-        </section>
+            </div>
+        </main>
+    </section>
 </body>
 </html>
